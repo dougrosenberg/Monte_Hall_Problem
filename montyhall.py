@@ -98,7 +98,7 @@ def simulate_monte_carlo () :
 def print_sample_space_tuples (sample_space: Set[Prob_Event]) -> None :
     for outcome in sample_space :
         t = tuple(outcome)
-        print(t)
+        print(f'probability= {outcome.prob}: {t[1:]}')
 
 
 def print_sample_Space (sample_space: Set[Prob_Event]) -> None :
